@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Bird Flopping Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div id="game-container">
+   <canvas id="game-canvas"></canvas>
+   <div id="score">
+    0
+   </div>
+   <div id="start-screen">
+    <div id="start-panel">
+     <h1 id="start-title">Bird Flopping Game</h1>
+     <p id="start-instruction">Click, tap, or press SPACE to flap!</p><button id="start-button">Start Game</button>
+    </div>
+   </div>
+   <div id="game-over-screen">
+    <div id="game-over-panel">
+     <h1 id="game-over-title">Game Over!</h1>
+     <div id="score-container">
+      <p id="final-score">Distance Traveled</p>
+      <p id="final-score-value">0</p>
+      <p id="best-score">Best Distance: <span id="best-score-value">0</span></p>
+     </div><button id="restart-button">Play Again</button>
+    </div>
+   </div>
+  </div>
+  <script src="script.js"></script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a3965f564f11c61',t:'MTc2Mzk5MjQ2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
